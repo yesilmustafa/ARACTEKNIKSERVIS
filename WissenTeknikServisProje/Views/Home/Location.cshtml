@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Location";
+    Layout = "~/Views/Shared/_LayoutGenel.cshtml";
+}
+
+
+<div class="row" style="background-color:#222; margin-right:0px; margin-left:0px;">
+    <div class="col-md-8">
+        <h2 style="color:white"></h2>
+        <form id="form" method="post" action="#">
+            <div class="form-group">
+
+                <input class="form-control" type="text" value="Name">
+            </div>
+            <div class="form-group">
+
+                <input class="form-control" type="text" value="Email">
+            </div>
+            <div class="form-group">
+
+                <input class="form-control" type="text" value="Phone">
+            </div>
+            <div class="form-group">
+                    <textarea class="form-control">MESSAGE</textarea>
+            </div>
+            <div><a href="#" class="button">Clear</a><a href="#" class="button" onClick="document.getElementById('form').submit()">Send</a></div>
+
+        </form>
+    </div>
+    <div class="col-md-4">
+        <div style="height:200px;">
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP53g7yo4Rm0Fc5qFg7_iiK3k8AWSNuyE&libraries=places" type="text/javascript"></script>        </div>
+        <dl style="height:200px; color:white">
+            <dt>
+                8901 Marmora Road, <br>
+                Glasgow, D04 89GR.
+                </dtstyle="height:200px;"
+            <dd><span>Telephone:</span>+1 800 603 6035</dd>
+            <dd><span>E-mail:</span><a href="#" class="link">mail@demolink.org</a></dd>
+        </dl>
+    </div>
+</div>

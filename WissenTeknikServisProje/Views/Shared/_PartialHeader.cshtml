@@ -1,0 +1,46 @@
+﻿<header>
+    <div class="main wrap">
+
+        <h1><a href="~/Home/Index"><img src="~/images/logo.png" alt=""></a></h1>
+        <p>  Kadıköy , ISTANBUL <span> (216) 216 2626</span></p>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li class="current"><a href="~/Home/Index" class="home"><img src="~/images/home.jpg" alt=""></a></li>
+            <li><a href="../">Anasayfa</a></li>
+            <li><a href="/Home/Hakkımızda">Hakkımızda</a></li>
+            @*<li><a href="~/Home/Iletisim">İletişim</a></li>*@
+
+
+            @if (HttpContext.Current.User.Identity.IsAuthenticated)
+
+    {
+
+
+        if (HttpContext.Current.User.IsInRole("Admin"))
+        {
+            <li><a href="../Admin/Admin/Index">Admin</a></li>
+
+}
+else if (HttpContext.Current.User.IsInRole("Operator"))
+{
+        <li><a href="../Operator/Index">Operatör</a></li>
+}
+
+        <li><a href="../Account/Profile">Profilim</a></li>
+        <li><a href="../Home/ArizaKaydi">Arıza Kayıt</a></li>
+        <li><a href="../Account/Logout">Çıkış Yap</a></li>
+}
+else
+{
+        <li><a href="../Account/Login">Giris</a></li>
+
+
+        <li><a href="../Account/Register">Üye Ol</a></li>
+}
+
+
+        </ul>
+        <div class="clear"></div>
+    </nav>
+</header>
