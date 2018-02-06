@@ -3,7 +3,7 @@ Sistemde roller admin,operator ve normal kullanıcı olarak ayrılmış durumda 
 operator girişinde girilen arıza kayıt işleminin kendi sistemine direkt olarak düşmesini sağladık. Normal kullanıcı arıza kaydı oluşturabilirken admin ve operatorler de aynı şekilde arıza kaydı açabiliyor.yalnızca sisteme giriş yapmayan kullanıcılar arıza kaydı oluşturamıyor.
 Sistem özellikleri:
 • Arıza bildirimi
-o Konum girilmeli girilmekte
+o Konum girilmekte
 o Arıza ile ilgili fotoğraf girilmekte
 • Üyelik Sistemi
 o Email ile doğrulama
